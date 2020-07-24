@@ -1,0 +1,19 @@
+{
+  "name": "ohmyfood_tp3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dreamswitch/ohMyFood_tp3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dreamswitch/ohMyFood_tp3/issues"
+  },
+  "homepage": "https://github.com/Dreamswitch/ohMyFood_tp3#readme"
+}

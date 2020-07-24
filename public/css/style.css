@@ -1,0 +1,129 @@
+@font-face {
+  font-family: "cambria";
+  src: url("fonts/cambria/Cambria-W01-Regular.woff"), url("fonts/cambria/Cambria-W01-Regular.eot"), url("fonts/cambria/Cambria-W01-Regular.otf"), url("fonts/cambria/Cambria-W01-Regular.ttf");
+}
+@font-face {
+  font-family: "croissant";
+  src: url("fonts/croissant/croissant-one.woff"), url("fonts/croissant/croissant-one.eot"), url("fonts/croissant/croissant-one.otf"), url("fonts/croissant/croissant-one.ttf");
+}
+@font-face {
+  font-family: "dancing";
+  src: url("fonts/dancing/dancing-script.woff"), url("fonts/dancing/dancing-script.eot"), url("fonts/dancing/dancing-script.otf"), url("fonts/dancing/dancing-script.ttf");
+}
+@font-face {
+  font-family: "devonshire";
+  src: url("fonts/devonshire/devonshire-regular.woff"), url("fonts/devonshire/devonshire-regular.eot"), url("fonts/devonshire/devonshire-regular.otf"), url("fonts/devonshire/devonshire-regular.ttf");
+}
+@font-face {
+  font-family: "kaushan";
+  src: url("fonts/kaushan/kaushan-script.woff"), url("fonts/kaushan/kaushan-script.eot"), url("fonts/kaushan/kaushan-script.otf"), url("fonts/kaushan/kaushan-script.ttf");
+}
+@font-face {
+  font-family: "segoe";
+  src: url("fonts/segoe/segoe-print-v2.woff"), url("fonts/segoe/segoe-print-v2.eot"), url("fonts/segoe/segoe-print-v2.otf"), url("fonts/segoe/segoe-print-v2.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+.home-container__menu:nth-child(0n+1) {
+  color: #5f2e34;
+}
+.home-container__menu:nth-child(0n+1) h1 {
+  font-family: devonshire;
+}
+.home-container__menu:nth-child(0n+1) h2 {
+  font-family: segoe;
+  font-size: 2rem;
+}
+.home-container__menu:nth-child(0n+2) h1 {
+  font-family: croissant;
+  background: linear-gradient(70deg, #cb802f, #b17bce);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.1rem;
+}
+.home-container__menu:nth-child(0n+2) h2 {
+  font-family: cambria;
+  color: #cb802f;
+  font-size: 2rem;
+}
+.home-container__menu:nth-child(0n+3) h1 {
+  font-family: dancing;
+  background: linear-gradient(70deg, #173bdf, #2092fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.home-container__menu:nth-child(0n+3) h2 {
+  font-family: segoe;
+  color: #2092fa;
+  font-size: 2rem;
+}
+.home-container__menu:nth-child(0n+4) h1 {
+  font-family: kaushan;
+  background: linear-gradient(70deg, #3e923a, #beff7f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.home-container__menu:nth-child(0n+4) h2 {
+  font-family: segoe;
+  color: #3e923a;
+  font-size: 2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fdcb46;
+  background-color: #579c87;
+  min-height: 100px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #efc554;
+  position: sticky;
+  bottom: 0;
+  min-height: 50px;
+  background-color: #579c87;
+}
+.footer__link {
+  padding: 0 10px;
+}
+
+.home-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 90%;
+  margin: 1rem auto;
+  background-color: antiquewhite;
+}
+.home-container__menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+  height: 60vw;
+  margin: 1rem 0;
+  background-color: aquamarine;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

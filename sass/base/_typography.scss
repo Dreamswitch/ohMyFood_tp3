@@ -1,0 +1,57 @@
+.home-container__menu{
+
+    &:nth-child(0n+1){
+        color: $color-accent-note;
+        & h1{
+            font-family: devonshire;
+        }
+    
+        & h2{
+            font-family: segoe;
+            font-size: 2rem;
+        }    
+    }
+    &:nth-child(0n+2){
+        & h1{
+            font-family: croissant;
+            @include linearGradient-text($color-accent-chic-1,$color-accent-chic-2);
+            font-size:1.1rem;
+        }
+    
+        & h2{
+            font-family: cambria;
+            color: $color-accent-chic-1;
+            font-size: 2rem;
+
+        }    
+    }
+    &:nth-child(0n+3){
+        & h1{
+            font-family: dancing;
+            @include linearGradient-text($color-accent-delice-1,$color-accent-delice-2);
+
+        }
+    
+        & h2{
+            font-family: segoe;
+            color: $color-accent-delice-2;
+            font-size: 2rem;
+
+        }    
+    }
+    &:nth-child(0n+4){
+        & h1{
+            font-family: kaushan;
+            @include linearGradient-text($color-accent-palette-1,$color-accent-palette-2);
+
+        }
+    
+        & h2{
+            font-family: segoe;
+            color: $color-accent-palette-1;
+            font-size: 2rem;
+
+
+        }    
+    }
+}

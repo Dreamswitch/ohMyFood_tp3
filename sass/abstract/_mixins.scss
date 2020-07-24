@@ -1,0 +1,34 @@
+//--------------automate import of font-face -----------------
+
+@mixin font-face($short-name,$name){
+    $formats:(woff,eot,otf,ttf);
+    @font-face {
+        font-family:$short-name;
+        src:
+        url('fonts/'+$short-name+'/'+$name+'.'+nth($formats,1)),
+        url('fonts/'+$short-name+'/'+$name+'.'+nth($formats,2)),
+        url('fonts/'+$short-name+'/'+$name+'.'+nth($formats,3)),
+        url('fonts/'+$short-name+'/'+$name+'.'+nth($formats,4));
+    }
+}
+
+@each $short-name,$name in $fonts {
+    @include font-face($short-name,$name);
+}
+
+//---------------- flex , justify-content , align-content
+
+@mixin flex($justify,$align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+//---------------text gradient linear------------
+
+@mixin linearGradient-text($accent-1,$accent-2){
+    background: linear-gradient(70deg,$accent-1,$accent-2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+

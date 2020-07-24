@@ -1,0 +1,12 @@
+.footer{
+    @include flex(space-between,center);
+    color: desaturate($color-accent,15%);
+    position:sticky;
+    bottom: 0;
+    min-height: $header-min-height*.5;
+    background-color: $color-primary;
+    
+    &__link{
+        padding:0 10px;
+    }
+}
