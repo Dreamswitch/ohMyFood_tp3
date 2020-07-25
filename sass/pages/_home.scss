@@ -1,18 +1,24 @@
+
+
 .home-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 90%;
     margin:1rem  auto;
-    background-color: antiquewhite;
 
-    &__menu{
+    &__menu-cover{
         @include flex(center,center);
-        width: $menu-width;
-        height: $menu-width*1.5;
-        margin: 1rem 0;
-        background-color: aquamarine;
+        width: $menu-cover-width;
+        height: $menu-cover-width*1.5;
+        margin: 1rem 1rem;
         text-align: center;
+        box-shadow: 0 0 20px gainsboro;
+        &:nth-child(0n+1){
+            & img{
+                width: 8vmax;
+            }
+        }
     }
 }
 
