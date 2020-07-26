@@ -1,0 +1,21 @@
+/*--------------- effet wriggle sur les boutons ---------------*/
+
+
+.btn--wriggle:active{
+    animation: wriggle linear 150ms;
+}
+
+@keyframes wriggle {
+    0%{
+        transform: translateX(3px);
+    }
+    25%{
+        transform: translateX(-3px);
+    }
+    75%{
+        transform: translateX(3px);
+    }
+    100%{
+        transform: translateX(-3px);
+    }
+}
