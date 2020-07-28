@@ -1,0 +1,100 @@
+
+
+/*
+        &--chic{
+
+        }
+        &--note{
+
+        }
+        &--delice{
+
+        }
+        &--palette{
+
+        }
+*/
+
+.menu{
+
+    &__heading{
+        @include flex(center,center);
+        margin-top: 4vmax;
+    }
+}
+
+.menu-card{
+    background: pink;
+    @include flex(space-evenly,center);
+    flex-direction: column;
+    position: relative;
+    margin: 1rem 5rem 5rem 5rem;
+    // margin: 1rem ;
+}
+
+.menu-card-heading{
+    height: 20vmin;
+    @include flex(center,center);
+    font-size: 4vw;
+}
+
+.menu-content{
+    margin-bottom: 2vmax;
+    width: 80%;
+    &__heading{
+        font-size: 2vw;
+        // font-size: 4vw
+        width: 100%;
+        text-align: center;
+        height: 2vmax;
+        //height: 2vw;
+        margin: 3vmax auto;
+        &::before{
+            content:"";
+            background-image: url(../../public/img/chic/chic_gauche.svg);
+            position: absolute;
+            width: 25%;
+            height: 2vmax;
+            left: 5%;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            //  width: 20%;
+            //  height: 4vw;
+
+        }
+        &::after{
+            content:"";
+            background-image: url(../../public/img/chic/chic_droit.svg);
+            position: absolute;
+            width: 25%;
+            height: 2vmax;
+            right: 5%;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            //  width: 20%;
+            //  height: 4vw;
+
+        }
+    }
+    &__list{
+        font-size: 2vw;
+        //font-size: 4vw;
+    }
+
+}
+
+.menu-content-list{
+    @include flex(space-between,flex-end);
+    margin: auto;
+    margin-bottom: 2%;
+
+    &__price{
+        font-weight: bold;
+    }
+}
+
+.menu-card-footer{
+    height: 15vmin;
+}

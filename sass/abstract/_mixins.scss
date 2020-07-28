@@ -40,3 +40,12 @@
     }
 }
 
+//------------------mixin le chic a la francaise ------------
+/*
+@mixin chic-h1{
+    font-family: croissant;
+    @include linearGradient-text($color-accent-chic-1,$color-accent-chic-2);
+    font-size:3vmax;
+    line-height: 8vmax;
+}
+*/

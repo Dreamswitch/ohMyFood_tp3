@@ -8,90 +8,79 @@
 
 
 .home-container__menu-cover{
-    position: relative;
 
      //----------------la note enchantée cover------->
 
-    &:nth-child(0n+1){
+    &--note{
         color: $color-accent-note;
-        background-color: $color-primary-note;
-        
-        & h1{
-            font-family: devonshire;
-            font-size: 4vmax;
-            line-height: 8vmax;
-
-        }
-    
-        & h2{
-            font-family: segoe;
-            font-size: 4vmax;
-            text-transform: uppercase;
-            line-height: 8vmax;
-
-        }    
+        background-color: $color-primary-note; 
     }
      //----------------le chic a la francaise cover------->
 
-    &:nth-child(0n+2){
+    &--chic{
         background-color: $color-primary-chic;
-
-        & h1{
-            font-family: croissant;
-            @include linearGradient-text($color-accent-chic-1,$color-accent-chic-2);
-            font-size:3vmax;
-            line-height: 8vmax;
-
-        }
-    
-        & h2{
-            font-family: cambria;
-            color: $color-accent-chic-1;
-            font-size: 4vmax;
-            line-height: 8vmax;
-
-        }    
+  
     }
      //----------------le délice des papilles cover------->
 
-    &:nth-child(0n+3){
+    &--delice{
         background-color: $color-primary-delice;
-
-        & h1{
-            font-family: dancing;
-            @include linearGradient-text($color-accent-delice-1,$color-accent-delice-2);
-            font-size: 4vmax;
-            line-height: 8vmax;
-
-        }
-    
-        & h2{
-            font-family: segoe;
-            color: $color-accent-delice-2;
-            font-size: 4vmax;
-            line-height: 8vmax;
-
-        }    
+ 
     }
      //----------------la palette du gout cover------->
-    &:nth-child(0n+4){
+    &--palette{
         background-color: $color-primary-palette;
 
-        & h1{
+    }
+}
+
+
+.menu-cover{
+
+    &__heading{
+        font-size: 4vmax;
+        line-height: 8vmax;
+
+        &--chic{
+            font-size:3vmax;
+            font-family: croissant;
+            @include linearGradient-text($color-accent-chic-1,$color-accent-chic-2);
+        }
+
+        &--note{
+            font-family: devonshire;
+        }
+
+        &--delice{
+            font-family: dancing;
+            @include linearGradient-text($color-accent-delice-1,$color-accent-delice-2);
+        }
+        
+        &--palette{
             font-family: kaushan;
             @include linearGradient-text($color-accent-palette-1,$color-accent-palette-2);
-            font-size:4vmax;
-            line-height:8vmax;
-
         }
-    
-        & h2{
-            font-family: segoe;
+    }
+    &__title{
+        font-size: 4vmax;
+        line-height: 8vmax;
+        font-family: segoe;
+
+        &--chic{
+            font-family: cambria;
+            color: $color-accent-chic-1;
+        }
+
+        &--note{
+            text-transform: uppercase;
+        }
+
+        &--delice{
+            color: $color-accent-delice-2;
+        }
+
+        &--palette{
             color: $color-accent-palette-1;
-            font-size: 4vmax;
-            line-height: 8vmax;
-
-
-        }    
+        }
     }
 }
