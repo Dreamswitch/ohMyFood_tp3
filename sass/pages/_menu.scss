@@ -16,10 +16,21 @@
 */
 
 .menu{
+    @include flex(center,center);
+    flex-direction: column;
 
     &__heading{
         @include flex(center,center);
-        margin-top: 4vmax;
+        @include small{
+            margin-top: 4vw;
+            font-size: 5vw;    
+        }
+        @include medium{
+            font-size: 3rem;    
+        }
+
+        margin-top: 4rem;
+        font-size: 3rem;
     }
 }
 
@@ -28,27 +39,54 @@
     @include flex(space-evenly,center);
     flex-direction: column;
     position: relative;
-    margin: 1rem 5rem 5rem 5rem;
-    // margin: 1rem ;
+    max-width: 1200px;
+    width: 90vw;
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+    box-shadow: 0 0 20px gainsboro;
+    @include small{
+        margin-bottom: 10%;
+        margin-top: 2vw;    
+    }
 }
 
 .menu-card-heading{
-    height: 20vmin;
     @include flex(center,center);
-    font-size: 4vw;
+    font-size: 2rem;
+    height: 20rem;
+    @include small{
+        font-size: 3.5vw;
+        height: 20vmax;
+        max-height: 25vw;    
+    }
+    @include medium{
+        font-size: 3vw;
+        height: 15rem;
+        max-height: 25vw;    
+    }
+
 }
 
 .menu-content{
-    margin-bottom: 2vmax;
+    margin-bottom: 2vw;
     width: 80%;
+
     &__heading{
-        font-size: 2vw;
-        // font-size: 4vw
+        font-size: 2rem;
         width: 100%;
         text-align: center;
-        height: 2vmax;
-        //height: 2vw;
-        margin: 3vmax auto;
+        height: 2rem;
+        @include small{
+            font-size: 4.5vw;
+            height: 2vmax;
+            max-height: 4vw;
+        }
+        @include medium{
+            height: 1.5rem;
+            font-size: 3vw;
+
+        }
+
         &::before{
             content:"";
             background-image: url(../../public/img/chic/chic_gauche.svg);
@@ -59,10 +97,13 @@
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
-            //  width: 20%;
-            //  height: 4vw;
+            @include small{
+                height: 4.5vw;
+                width: 20%;
 
+            }
         }
+
         &::after{
             content:"";
             background-image: url(../../public/img/chic/chic_droit.svg);
@@ -73,28 +114,46 @@
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
-            //  width: 20%;
-            //  height: 4vw;
+            @include small{
+                height: 4.5vw;
+                width: 20%;
+            }
 
         }
     }
     &__list{
-        font-size: 2vw;
-        //font-size: 4vw;
+        font-size: 2rem;
+        margin: 4rem 0;
+        @include small{
+            font-size: 4.5vw;
+            margin: 5vw 0;
+        }
+        @include medium{
+            font-size: 2.5vw;
+        }
     }
 
 }
 
 .menu-content-list{
     @include flex(space-between,flex-end);
-    margin: auto;
-    margin-bottom: 2%;
+    margin-bottom: 2rem;
+    @include small{
+        flex-direction: column;
+        @include flex(center,center);
+        text-align: center;
+        margin-bottom: 1rem;
 
+    }
     &__price{
         font-weight: bold;
+        @include small{
+            margin-top: .5rem;
+        }
     }
 }
 
 .menu-card-footer{
     height: 15vmin;
+    max-height: 15vw;
 }

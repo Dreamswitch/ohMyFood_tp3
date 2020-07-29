@@ -71,19 +71,6 @@ a {
   background-color: #fdfffd;
 }
 
-.menu-cover--chic {
-  background-color: #fff5fe;
-}
-.menu-cover--note {
-  color: #5f2e34;
-  background-color: #fcdfdb;
-}
-.menu-cover--delice {
-  background-color: #f9f9f9;
-}
-.menu-cover--palette {
-  background-color: #fdfffd;
-}
 .menu-cover__heading {
   font-size: 4vmax;
   line-height: 8vmax;
@@ -257,11 +244,29 @@ a {
 
         }
 */
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .menu__heading {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 4vmax;
+  margin-top: 4rem;
+  font-size: 3rem;
+}
+@media all and (max-width: 600px) {
+  .menu__heading {
+    margin-top: 4vw;
+    font-size: 5vw;
+  }
+}
+@media all and (min-width: 601px) and (max-width: 1024px) {
+  .menu__heading {
+    font-size: 3rem;
+  }
 }
 
 .menu-card {
@@ -271,27 +276,63 @@ a {
   align-items: center;
   flex-direction: column;
   position: relative;
-  margin: 1rem 5rem 5rem 5rem;
+  max-width: 1200px;
+  width: 90vw;
+  margin-bottom: 5rem;
+  margin-top: 2rem;
+  box-shadow: 0 0 20px gainsboro;
+}
+@media all and (max-width: 600px) {
+  .menu-card {
+    margin-bottom: 10%;
+    margin-top: 2vw;
+  }
 }
 
 .menu-card-heading {
-  height: 20vmin;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 4vw;
+  font-size: 2rem;
+  height: 20rem;
+}
+@media all and (max-width: 600px) {
+  .menu-card-heading {
+    font-size: 3.5vw;
+    height: 20vmax;
+    max-height: 25vw;
+  }
+}
+@media all and (min-width: 601px) and (max-width: 1024px) {
+  .menu-card-heading {
+    font-size: 3vw;
+    height: 15rem;
+    max-height: 25vw;
+  }
 }
 
 .menu-content {
-  margin-bottom: 2vmax;
+  margin-bottom: 2vw;
   width: 80%;
 }
 .menu-content__heading {
-  font-size: 2vw;
+  font-size: 2rem;
   width: 100%;
   text-align: center;
-  height: 2vmax;
-  margin: 3vmax auto;
+  height: 2rem;
+}
+@media all and (max-width: 600px) {
+  .menu-content__heading {
+    font-size: 4.5vw;
+    height: 2vmax;
+    max-height: 4vw;
+  }
+}
+@media all and (min-width: 601px) and (max-width: 1024px) {
+  .menu-content__heading {
+    height: 1.5rem;
+    font-size: 3vw;
+  }
 }
 .menu-content__heading::before {
   content: "";
@@ -304,6 +345,12 @@ a {
   background-repeat: no-repeat;
   background-position: center;
 }
+@media all and (max-width: 600px) {
+  .menu-content__heading::before {
+    height: 4.5vw;
+    width: 20%;
+  }
+}
 .menu-content__heading::after {
   content: "";
   background-image: url(../../public/img/chic/chic_droit.svg);
@@ -315,23 +362,56 @@ a {
   background-repeat: no-repeat;
   background-position: center;
 }
+@media all and (max-width: 600px) {
+  .menu-content__heading::after {
+    height: 4.5vw;
+    width: 20%;
+  }
+}
 .menu-content__list {
-  font-size: 2vw;
+  font-size: 2rem;
+  margin: 4rem 0;
+}
+@media all and (max-width: 600px) {
+  .menu-content__list {
+    font-size: 4.5vw;
+    margin: 5vw 0;
+  }
+}
+@media all and (min-width: 601px) and (max-width: 1024px) {
+  .menu-content__list {
+    font-size: 2.5vw;
+  }
 }
 
 .menu-content-list {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin: auto;
-  margin-bottom: 2%;
+  margin-bottom: 2rem;
+}
+@media all and (max-width: 600px) {
+  .menu-content-list {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
 }
 .menu-content-list__price {
   font-weight: bold;
 }
+@media all and (max-width: 600px) {
+  .menu-content-list__price {
+    margin-top: 0.5rem;
+  }
+}
 
 .menu-card-footer {
   height: 15vmin;
+  max-height: 15vw;
 }
 
 /*# sourceMappingURL=style.css.map */
