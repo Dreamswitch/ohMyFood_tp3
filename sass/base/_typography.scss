@@ -7,27 +7,23 @@
 
 
 
-.home-container__menu-cover{
+.bg{ //----------menus-backgrounds------------------>
 
-     //----------------la note enchantée cover------->
 
     &--note{
         color: $color-accent-note;
         background-color: $color-primary-note; 
     }
-     //----------------le chic a la francaise cover------->
 
     &--chic{
         background-color: $color-primary-chic;
   
     }
-     //----------------le délice des papilles cover------->
 
     &--delice{
         background-color: $color-primary-delice;
  
     }
-     //----------------la palette du gout cover------->
     &--palette{
         background-color: $color-primary-palette;
 
@@ -43,24 +39,9 @@
 
         &--chic{
             font-size:3vmax;
-            font-family: croissant;
-            @include linearGradient-text($color-accent-chic-1,$color-accent-chic-2);
-        }
-
-        &--note{
-            font-family: devonshire;
-        }
-
-        &--delice{
-            font-family: dancing;
-            @include linearGradient-text($color-accent-delice-1,$color-accent-delice-2);
-        }
-        
-        &--palette{
-            font-family: kaushan;
-            @include linearGradient-text($color-accent-palette-1,$color-accent-palette-2);
         }
     }
+    
     &__title{
         font-size: 4vmax;
         line-height: 8vmax;
@@ -83,4 +64,32 @@
             color: $color-accent-palette-1;
         }
     }
+}
+
+//-----------global customs typography
+
+.heading{
+
+    &--chic{
+        font-family: croissant;
+        @include linearGradient-text($color-accent-chic-1,$color-accent-chic-2);
+    }
+
+    &--note{
+        font-family: devonshire;
+    }
+
+    &--delice{
+        font-family: dancing;
+        @include linearGradient-text($color-accent-delice-1,$color-accent-delice-2);
+    }
+    
+    &--palette{
+        font-family: kaushan;
+        @include linearGradient-text($color-accent-palette-1,$color-accent-palette-2);
+    }
+}
+
+.global-font--chic{
+    font-family: cambria;
 }

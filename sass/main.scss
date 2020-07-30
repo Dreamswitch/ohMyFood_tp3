@@ -3,6 +3,11 @@
     "./abstract/mixins",
     "./abstract/functions";
 
+
+@import
+    "./pages/home",
+    "./pages/menu";
+
 @import 
     "./base/normalize",
     "./base/typography";
@@ -15,6 +20,3 @@
     "./layout/container",
     "./layout/footer";
 
-@import
-    "./pages/home",
-    "./pages/menu";

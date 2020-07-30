@@ -15,12 +15,16 @@
         }
 */
 
-.menu{
+.container-main{
     @include flex(center,center);
     flex-direction: column;
 
     &__heading{
+        margin-top: 4rem;
+        font-size: 3rem;
         @include flex(center,center);
+
+        //-------@media---------->
         @include small{
             margin-top: 4vw;
             font-size: 5vw;    
@@ -28,14 +32,11 @@
         @include medium{
             font-size: 3rem;    
         }
-
-        margin-top: 4rem;
-        font-size: 3rem;
     }
 }
 
-.menu-card{
-    background: pink;
+.menu{
+    font-family:segoe ;
     @include flex(space-evenly,center);
     flex-direction: column;
     position: relative;
@@ -44,116 +45,218 @@
     margin-bottom: 5rem;
     margin-top: 2rem;
     box-shadow: 0 0 20px gainsboro;
+
+    //-------@media---------->
     @include small{
         margin-bottom: 10%;
         margin-top: 2vw;    
     }
-}
 
-.menu-card-heading{
-    @include flex(center,center);
-    font-size: 2rem;
-    height: 20rem;
-    @include small{
-        font-size: 3.5vw;
-        height: 20vmax;
-        max-height: 25vw;    
-    }
-    @include medium{
-        font-size: 3vw;
-        height: 15rem;
-        max-height: 25vw;    
-    }
-
-}
-
-.menu-content{
-    margin-bottom: 2vw;
-    width: 80%;
-
-    &__heading{
-        font-size: 2rem;
-        width: 100%;
-        text-align: center;
-        height: 2rem;
-        @include small{
-            font-size: 4.5vw;
-            height: 2vmax;
-            max-height: 4vw;
-        }
-        @include medium{
-            height: 1.5rem;
-            font-size: 3vw;
-
-        }
-
-        &::before{
-            content:"";
-            background-image: url(../../public/img/chic/chic_gauche.svg);
-            position: absolute;
-            width: 25%;
-            height: 2vmax;
-            left: 5%;
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-            @include small{
-                height: 4.5vw;
-                width: 20%;
-
-            }
-        }
-
-        &::after{
-            content:"";
-            background-image: url(../../public/img/chic/chic_droit.svg);
-            position: absolute;
-            width: 25%;
-            height: 2vmax;
-            right: 5%;
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-            @include small{
-                height: 4.5vw;
-                width: 20%;
-            }
-
-        }
-    }
-    &__list{
-        font-size: 2rem;
-        margin: 4rem 0;
-        @include small{
-            font-size: 4.5vw;
-            margin: 5vw 0;
-        }
-        @include medium{
-            font-size: 2.5vw;
-        }
-    }
-
-}
-
-.menu-content-list{
-    @include flex(space-between,flex-end);
-    margin-bottom: 2rem;
-    @include small{
-        flex-direction: column;
+    &-header{
         @include flex(center,center);
-        text-align: center;
-        margin-bottom: 1rem;
+        flex-direction: column;
+        font-size: 2rem;
+        height: 20rem;
 
-    }
-    &__price{
-        font-weight: bold;
+        //-------@media---------->
         @include small{
-            margin-top: .5rem;
+            font-size: 3.5vw;
+            height: 20vmax;
+            max-height: 25vw;    
+        }
+        @include medium{
+            font-size: 3vw;
+            height: 15rem;
+            max-height: 25vw;    
+        }
+    
+        &__logo{
+            width: 4rem;
+            //-------@media---------->
+            @include small{
+                width: 6vw;   
+            }
+            @include medium{
+                width: 6vw;
+            }
+
+        }
+    }
+    &-content{
+        margin-bottom: 2vw;
+        width: 80%;
+    
+        &__heading{
+            @include flex(center,center);
+            font-size: 1.3rem;
+            text-align: center;
+            height: 2rem;
+
+            //-------@media---------->
+            @include small{
+                font-size: 3.5vw;
+                height: 2vmax;
+                max-height: 4vw;
+            }
+            @include medium{
+                height: 1.5rem;
+                font-size: 2vw;
+    
+            }
+    
+        }
+        &__list{
+            font-size: 1.3rem;
+            margin: 2vmax 0;
+
+            //-------@media---------->
+            @include small{
+                font-size: 3.5vw;
+                margin: 5vw 0;
+            }
+            @include medium{
+                font-size: 2vw;
+            }
+
+            &-container{
+                @include flex(space-between,flex-end);
+                margin-bottom: 1vmax;
+
+                //-------@media---------->
+                @include small{
+                    flex-direction: column;
+                    @include flex(center,center);
+                    text-align: center;
+                    margin-bottom: 1vmax;
+            
+                }
+            }
+            &-price{
+                font-weight: bold;
+
+                //-------@media---------->
+                @include small{
+                    margin-top: .5rem;
+                }
+            }
+        }
+    }
+    &-footer{
+        @include flex(center,center);
+        height: 15vmin;
+        max-height: 15vw;
+        width: 100%;
+        font-family: devonshire;
+        font-size: 2rem;
+        padding-bottom: 1rem;
+
+        //-------@media---------->
+        @include small{
+            font-size: 4.5vw;   
+        }
+        @include medium{
+            font-size: 3vw;
+        }
+
+        &__logo{
+            width: 2.5rem;
+            margin-right: .8rem;
+
+            //-------@media---------->
+            @include small{
+                width: 5vw;   
+            }
+            @include medium{
+                width: 4.5vw;
+            }
+            
         }
     }
 }
 
-.menu-card-footer{
-    height: 15vmin;
-    max-height: 15vw;
+
+
+//-----------float customs class--------------->
+
+.svg-decoration{
+
+    &--chic{
+        &-or{
+            @include svg-decoration(before,chic,chic-left);
+            @include svg-decoration(after,chic,chic-left){
+                transform: rotateY(180deg);
+            };
+        }
+        &-lighten-purple{
+            @include svg-decoration(before,chic,chic-left-mid);
+            @include svg-decoration(after,chic,chic-left-mid){
+                transform: rotateY(180deg);
+            };
+        }
+        &-purple{
+            @include svg-decoration(before,chic,chic-left-low);
+            @include svg-decoration(after,chic,chic-left-low){
+                transform: rotateY(180deg);
+            };
+        }
+    }
+    &--note{        
+        @include svg-decoration(before,note,note-left);
+        @include svg-decoration(after,note,note-right);
+    }
+
+    &--delice{
+        &-darken{
+            @include svg-decoration(before,delice,delice-left-darken);
+            @include svg-decoration(after,delice,delice-left-darken){
+                transform: rotateY(180deg);
+            };
+        }
+        &-normal{
+            @include svg-decoration(before,delice,delice-left-normal);
+            @include svg-decoration(after,delice,delice-left-normal){
+                transform: rotateY(180deg);
+            };
+        }
+        &-lighten{
+            @include svg-decoration(before,delice,delice-left-lighten);
+            @include svg-decoration(after,delice,delice-left-lighten){
+                transform: rotateY(180deg);
+            };
+        }
+    }
+    &--palette{
+        @include svg-decoration(before,palette,palette-left);
+        @include svg-decoration(after,palette,palette-left){
+            transform: rotateY(180deg);
+        };
+    }
+}
+
+.font-color{
+    &--chic{
+        &-or{
+            color: $color-accent-chic-1;
+        }
+        &-lighten-purple{
+            color: $color-accent-chic-4;
+        }
+        &-purple{
+            color: $color-accent-chic-3;
+        }
+    }
+    &--note{
+
+    }
+    &--delice{
+
+    }
+    &--palette{
+
+    }
+
+} 
+
+.width--note-90{
+    width: 90%;
 }
