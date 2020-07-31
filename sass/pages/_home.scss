@@ -8,7 +8,7 @@
     margin:1rem  auto;
 
     &__menu-cover{
-        @include flex(center,center);
+        @include flex(center,center,row);
         width: $menu-cover-width;
         height: $menu-cover-width*1.5;
         margin: 1rem 1rem;
@@ -17,7 +17,7 @@
         overflow: hidden;
 
 
-        &:hover>a{
+        &:hover>.menu-cover{
             transition: transform 500ms linear;
             transform: scale(1.1);
             opacity: .7;
@@ -36,7 +36,7 @@
     border-radius: .5vmax;
     width: 20vmax;
     height: 3.5vmax;
-    @include flex(center,center);
+    @include flex(center,center,row);
 
     &__title{
         position: relative;
@@ -46,7 +46,7 @@
 }
 
 .container-suspension{
-    @include flex(space-evenly,center);
+    @include flex(space-evenly,center,row);
     width: 2.5vmax;
     margin-left: 1vmax;
 

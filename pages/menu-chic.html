@@ -9,20 +9,22 @@
 <body>
 
     <header class="header">
-        <h1 class="header__logo">ohmyfood</h1>
+        <a href="../index.html"><img src="../public/img/logo/logo.svg" alt="logo oh my food" class="header__logo"></a>
     </header>
 
     <main class="container-main">
         <h1 class="container-main__heading">Le chic à la française</h1>
         
-            <article class="menu bg--chic global-font--chic">
+            <article class="menu bg--chic font-family--chic">
 
                 <header class="menu-header">
                     <h1 class="menu-header__title heading--chic">Le chic à la française</h1>
                 </header>
 
                 <section class="menu-content font-color--chic-or">
-                   <h2 class="menu-content__heading svg-decoration--chic-or">Pour se mettre en appétit</h2>
+                   <div class="menu-content__heading svg-decoration--chic-or">
+                       <h2 class="menu-content__heading-title" data-text="Pour se mettre en appétit">Pour se mettre en appétit</h2>
+                    </div>
                    <ul class="menu-content__list">
                     
                        <li class="menu-content__list-container">
@@ -44,7 +46,11 @@
                 </section>
 
                 <section class="menu-content font-color--chic-lighten-purple">
-                   <h2 class="menu-content__heading svg-decoration--chic-lighten-purple">Plaisir des papilles</h2>
+
+                   <div class="menu-content__heading svg-decoration--chic-lighten-purple">
+                       <h2 class="menu-content__heading-title" data-text="Plaisir des papilles">Plaisir des papilles</h2>
+                    </div>
+
                    <ul class="menu-content__list">
 
                        <li class="menu-content__list-container">
@@ -66,7 +72,9 @@
                 </section>
 
                 <section class="menu-content font-color--chic-purple">
-                   <h2 class="menu-content__heading svg-decoration--chic-purple">Gourmandises sucrées</h2>
+                   <div class="menu-content__heading svg-decoration--chic-purple">
+                       <h2 class="menu-content__heading-title"  data-text="Gourmandises sucrées">Gourmandises sucrées</h2>
+                    </div>
                    <ul class="menu-content__list">
 
                        <li class="menu-content__list-container">
@@ -87,7 +95,6 @@
                     
                 </footer>
             </article>
-
     </main>
     
     <footer class="footer">

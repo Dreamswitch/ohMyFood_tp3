@@ -18,10 +18,12 @@
 
 //---------------- flex , justify-content , align-content
 
-@mixin flex($justify,$align) {
+@mixin flex($justify,$align,$direction) {
     display: flex;
     justify-content: $justify;
     align-items: $align;
+    flex-direction: $direction;
+
 }
 
 //---------------text gradient linear------------
@@ -30,6 +32,8 @@
     background: linear-gradient(70deg,$accent-1,$accent-2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    width: 103%;
+    text-align: center;
 }
 
 //---------------responsive--------------

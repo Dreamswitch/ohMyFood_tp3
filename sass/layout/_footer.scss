@@ -1,10 +1,11 @@
 .footer{
-    @include flex(space-between,center);
-    color: desaturate($color-accent,15%);
+    @include flex(space-between,center,row);
+    color: $color-accent;
     position:sticky;
     bottom: 0;
     height: $header-height*.5;
     background-color: $color-primary;
+    border-top:1px solid $color-border;
     
     &__link{
         margin:0 10px;

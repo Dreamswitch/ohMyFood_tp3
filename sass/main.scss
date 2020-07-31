@@ -1,11 +1,11 @@
 @import
     "./abstract/variables",
-    "./abstract/mixins",
-    "./abstract/functions";
+    "./abstract/mixins";
 
 
 @import
     "./pages/home",
+    "./pages/mention",
     "./pages/menu";
 
 @import 
@@ -17,6 +17,5 @@
 
 @import
     "./layout/header",
-    "./layout/container",
     "./layout/footer";
 

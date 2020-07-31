@@ -7,29 +7,7 @@
 
 
 
-.bg{ //----------menus-backgrounds------------------>
-
-
-    &--note{
-        color: $color-accent-note;
-        background-color: $color-primary-note; 
-    }
-
-    &--chic{
-        background-color: $color-primary-chic;
-  
-    }
-
-    &--delice{
-        background-color: $color-primary-delice;
- 
-    }
-    &--palette{
-        background-color: $color-primary-palette;
-
-    }
-}
-
+//--------------home (index.html) global typography
 
 .menu-cover{
 
@@ -66,9 +44,89 @@
     }
 }
 
-//-----------global customs typography
 
-.heading{
+
+//-----------menus global typography
+
+.container-main{
+    font-family: sans-serif;
+
+    &__heading{
+        font-size: 3rem;
+        //-------@media---------->
+        @include small{
+            font-size: 5vw;    
+        }
+    }
+}
+
+.menu{
+    font-family:segoe ;
+
+    &-header{
+        font-size: 2rem;
+        //-------@media---------->
+        @include small{
+            font-size: 3.5vw;
+        }
+        @include medium{
+            font-size: 3vw;
+        }
+    }
+
+    &-content{
+        line-height: 2em;
+        
+        &__heading{
+
+            &-title{
+                font-size: 1.3rem;
+                @include small{
+                    font-size: 3.5vw;
+                }   
+                @include medium{
+                    font-size: 2vw;
+                }
+            }
+
+        }
+        &__list{
+            font-size: 1.3rem;
+            //-------@media---------->
+            @include small{
+                font-size: 3.5vw;
+            }
+            @include medium{
+                font-size: 2vw;
+            }
+
+            &-price{
+                font-weight: bold;
+            }
+        }
+    }
+    &-footer{
+        font-family: devonshire;
+        font-size: 2rem;
+
+        //-------@media---------->
+        @include small{
+            font-size: 4.5vw;   
+        }
+        @include medium{
+            font-size: 3vw;
+        }
+
+    }
+}
+
+
+
+
+
+//-----------menus generics customs typography
+
+.heading{ //--------------Titres des menus--------------->
 
     &--chic{
         font-family: croissant;
@@ -90,6 +148,20 @@
     }
 }
 
-.global-font--chic{
+.font-color{
+    &--chic{
+        &-or{
+            color: $color-accent-chic-1;
+        }
+        &-lighten-purple{
+            color: $color-accent-chic-4;
+        }
+        &-purple{
+            color: $color-accent-chic-3;
+        }
+    }
+} 
+
+.font-family--chic{
     font-family: cambria;
 }

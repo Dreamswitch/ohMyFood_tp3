@@ -1,44 +1,21 @@
 
 
-/*
-        &--chic{
-
-        }
-        &--note{
-
-        }
-        &--delice{
-
-        }
-        &--palette{
-
-        }
-*/
-
 .container-main{
-    @include flex(center,center);
-    flex-direction: column;
+    @include flex(center,center,column);
 
     &__heading{
         margin-top: 4rem;
-        font-size: 3rem;
-        @include flex(center,center);
+        @include flex(center,center,row);
 
         //-------@media---------->
         @include small{
             margin-top: 4vw;
-            font-size: 5vw;    
-        }
-        @include medium{
-            font-size: 3rem;    
         }
     }
 }
 
 .menu{
-    font-family:segoe ;
-    @include flex(space-evenly,center);
-    flex-direction: column;
+    @include flex(space-evenly,center,column);
     position: relative;
     max-width: 1200px;
     width: 90vw;
@@ -53,23 +30,19 @@
     }
 
     &-header{
-        @include flex(center,center);
-        flex-direction: column;
-        font-size: 2rem;
+        @include flex(center,center,column);
         height: 20rem;
 
         //-------@media---------->
         @include small{
-            font-size: 3.5vw;
             height: 20vmax;
             max-height: 25vw;    
         }
         @include medium{
-            font-size: 3vw;
             height: 15rem;
             max-height: 25vw;    
         }
-    
+
         &__logo{
             width: 4rem;
             //-------@media---------->
@@ -85,55 +58,60 @@
     &-content{
         margin-bottom: 2vw;
         width: 80%;
-    
+        line-height: 2em;
+        &:hover .menu-content__heading-title::before{
+            transition: transform 500ms;
+            transform: scaleX(1);
+        }
+        
         &__heading{
-            @include flex(center,center);
-            font-size: 1.3rem;
-            text-align: center;
+            @include flex(center,center,row);
             height: 2rem;
 
             //-------@media---------->
             @include small{
-                font-size: 3.5vw;
                 height: 2vmax;
                 max-height: 4vw;
             }
             @include medium{
                 height: 1.5rem;
-                font-size: 2vw;
-    
             }
-    
+            
+            &-title{
+                text-align: center; 
+                position: relative;
+
+                &::before{
+                    content:attr(data-text);
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    transform-origin: left;
+                    color: transparent;
+                    text-decoration: solid underline $color-primary;
+                    transform: scaleX(0);
+                }
+            }
+
         }
         &__list{
-            font-size: 1.3rem;
             margin: 2vmax 0;
 
-            //-------@media---------->
-            @include small{
-                font-size: 3.5vw;
-                margin: 5vw 0;
-            }
-            @include medium{
-                font-size: 2vw;
-            }
-
             &-container{
-                @include flex(space-between,flex-end);
+                @include flex(space-between,flex-end,row);
                 margin-bottom: 1vmax;
 
                 //-------@media---------->
                 @include small{
-                    flex-direction: column;
-                    @include flex(center,center);
+                    @include flex(center,center,column);
                     text-align: center;
                     margin-bottom: 1vmax;
             
                 }
             }
             &-price{
-                font-weight: bold;
-
                 //-------@media---------->
                 @include small{
                     margin-top: .5rem;
@@ -142,21 +120,11 @@
         }
     }
     &-footer{
-        @include flex(center,center);
+        @include flex(center,center,row);
         height: 15vmin;
         max-height: 15vw;
         width: 100%;
-        font-family: devonshire;
-        font-size: 2rem;
         padding-bottom: 1rem;
-
-        //-------@media---------->
-        @include small{
-            font-size: 4.5vw;   
-        }
-        @include medium{
-            font-size: 3vw;
-        }
 
         &__logo{
             width: 2.5rem;
@@ -176,7 +144,7 @@
 
 
 
-//-----------float customs class--------------->
+//-----------generic customs class--------------->
 
 .svg-decoration{
 
@@ -233,30 +201,30 @@
     }
 }
 
-.font-color{
-    &--chic{
-        &-or{
-            color: $color-accent-chic-1;
-        }
-        &-lighten-purple{
-            color: $color-accent-chic-4;
-        }
-        &-purple{
-            color: $color-accent-chic-3;
-        }
-    }
-    &--note{
-
-    }
-    &--delice{
-
-    }
-    &--palette{
-
-    }
-
-} 
 
 .width--note-90{
     width: 90%;
+}
+
+.bg{ //----------backgrounds------------------>
+
+
+    &--note{
+        color: $color-accent-note;
+        background-color: $color-primary-note; 
+    }
+
+    &--chic{
+        background-color: $color-primary-chic;
+  
+    }
+
+    &--delice{
+        background-color: $color-primary-delice;
+ 
+    }
+    &--palette{
+        background-color: $color-primary-palette;
+
+    }
 }

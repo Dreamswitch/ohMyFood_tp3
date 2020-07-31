@@ -1,8 +1,11 @@
 .header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color:$color-accent;
+    @include flex(center,center,row);
     background-color: $color-primary;
     height: $header-height;
+    border-bottom:1px solid $color-border;
+
+
+    &__logo{
+        height: $header-height*2/3;
+    }
 }
