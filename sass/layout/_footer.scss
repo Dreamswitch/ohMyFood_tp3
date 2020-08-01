@@ -1,13 +1,20 @@
 .footer{
     @include flex(space-between,center,row);
     color: $color-accent;
-    position:sticky;
+    position:fixed;
     bottom: 0;
+    left: 0;
+    width: 100%;
     height: $header-height*.5;
     background-color: $color-primary;
     border-top:1px solid $color-border;
+    box-sizing: content-box;
     
     &__link{
         margin:0 10px;
+
+        &:active{
+            @extend %wriggle-effect;
+        }
     }
 }

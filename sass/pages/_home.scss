@@ -36,6 +36,7 @@
     border-radius: .5vmax;
     width: 20vmax;
     height: 3.5vmax;
+    margin-bottom: $header-height*.5;
     @include flex(center,center,row);
 
     &__title{

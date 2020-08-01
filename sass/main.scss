@@ -1,6 +1,7 @@
 @import
     "./abstract/variables",
-    "./abstract/mixins";
+    "./abstract/mixins",
+    "./abstract/extend";
 
 
 @import
@@ -12,8 +13,7 @@
     "./base/normalize",
     "./base/typography";
 
-@import
-    "./component/buttons";
+
 
 @import
     "./layout/header",
