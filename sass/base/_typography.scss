@@ -23,10 +23,10 @@
     &__title{
         font-size: 4vmax;
         line-height: 8vmax;
-        font-family: segoe;
-
+        font-family: segoe, Tahoma, Verdana, sans-serif;
+        
         &--chic{
-            font-family: cambria;
+            font-family: cambria, Georgia, Times, 'Times New Roman', serif;
             color: $color-accent-chic-1;
         }
 
@@ -61,7 +61,7 @@
 }
 
 .menu{
-    font-family:segoe ;
+    font-family: segoe, Tahoma, Verdana, sans-serif;
 
     &-header{
         font-size: 2rem;
@@ -106,7 +106,7 @@
         }
     }
     &-footer{
-        font-family: devonshire;
+        font-family: devonshire, Georgia, Times, 'Times New Roman', serif;;
         font-size: 2rem;
 
         //-------@media---------->
@@ -129,21 +129,21 @@
 .heading{ //--------------Titres des menus--------------->
 
     &--chic{
-        font-family: croissant;
+        font-family: croissant, Georgia, Times, 'Times New Roman', serif;
         @include linearGradient-text($color-accent-chic-1,$color-accent-chic-2);
     }
 
     &--note{
-        font-family: devonshire;
+        font-family: devonshire, Georgia, Times, 'Times New Roman', serif;
     }
 
     &--delice{
-        font-family: dancing;
+        font-family: dancing, Georgia, Times, 'Times New Roman', serif;
         @include linearGradient-text($color-accent-delice-1,$color-accent-delice-2);
     }
     
     &--palette{
-        font-family: kaushan;
+        font-family: kaushan, Georgia, Times, 'Times New Roman', serif;
         @include linearGradient-text($color-accent-palette-1,$color-accent-palette-2);
     }
 }
@@ -163,5 +163,5 @@
 } 
 
 .font-family--chic{
-    font-family: cambria;
+    font-family: cambria, Georgia, Times, 'Times New Roman', serif;
 }

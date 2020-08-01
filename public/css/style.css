@@ -97,6 +97,13 @@
     transform: translateY(-0.6vmax);
   }
 }
+.mention-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: unset;
+  flex-direction: column;
+}
+
 .mention {
   width: 500px;
   height: 250px;
@@ -555,6 +562,10 @@
   box-sizing: border-box;
 }
 
+body {
+  min-height: 100vh;
+}
+
 a {
   text-decoration: none;
   color: unset;
@@ -578,10 +589,10 @@ a {
 .menu-cover__title {
   font-size: 4vmax;
   line-height: 8vmax;
-  font-family: segoe;
+  font-family: segoe, Tahoma, Verdana, sans-serif;
 }
 .menu-cover__title--chic {
-  font-family: cambria;
+  font-family: cambria, Georgia, Times, "Times New Roman", serif;
   color: #cb802f;
 }
 .menu-cover__title--note {
@@ -607,7 +618,7 @@ a {
 }
 
 .menu {
-  font-family: segoe;
+  font-family: segoe, Tahoma, Verdana, sans-serif;
 }
 .menu-header {
   font-size: 2rem;
@@ -655,7 +666,7 @@ a {
   font-weight: bold;
 }
 .menu-footer {
-  font-family: devonshire;
+  font-family: devonshire, Georgia, Times, "Times New Roman", serif;
   font-size: 2rem;
 }
 @media all and (max-width: 600px) {
@@ -670,7 +681,7 @@ a {
 }
 
 .heading--chic {
-  font-family: croissant;
+  font-family: croissant, Georgia, Times, "Times New Roman", serif;
   background: linear-gradient(70deg, #cb802f, #aa7cff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -678,10 +689,10 @@ a {
   text-align: center;
 }
 .heading--note {
-  font-family: devonshire;
+  font-family: devonshire, Georgia, Times, "Times New Roman", serif;
 }
 .heading--delice {
-  font-family: dancing;
+  font-family: dancing, Georgia, Times, "Times New Roman", serif;
   background: linear-gradient(70deg, #173bdf, #69baf5);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -689,7 +700,7 @@ a {
   text-align: center;
 }
 .heading--palette {
-  font-family: kaushan;
+  font-family: kaushan, Georgia, Times, "Times New Roman", serif;
   background: linear-gradient(70deg, #3e923a, #beff7f);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -708,7 +719,7 @@ a {
 }
 
 .font-family--chic {
-  font-family: cambria;
+  font-family: cambria, Georgia, Times, "Times New Roman", serif;
 }
 
 /*--------------- effet wriggle sur les boutons ---------------*/

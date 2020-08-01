@@ -1,5 +1,7 @@
 
-
+.mention-page{
+    @include flex(space-between,unset,column);
+}
 .mention{
     width: 500px;
     height: 250px;
