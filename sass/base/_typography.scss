@@ -126,7 +126,7 @@
 
 //-----------menus generics customs typography
 
-.heading{ //--------------Titres des menus--------------->
+.heading{ //--------------titles menus--------------->
 
     &--chic{
         font-family: croissant, Georgia, Times, 'Times New Roman', serif;
@@ -147,7 +147,7 @@
         @include linearGradient-text($color-accent-palette-1,$color-accent-palette-2);
     }
 }
-
+//--------------------font-color sections menus----->
 .font-color{
     &--chic{
         &-or{
@@ -161,7 +161,7 @@
         }
     }
 } 
-
+//--------------------font-family menu sections--------->
 .font-family--chic{
     font-family: cambria, Georgia, Times, 'Times New Roman', serif;
 }

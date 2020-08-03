@@ -1,4 +1,5 @@
 //--------------automate import of font-face -----------------
+//-------------
 
 @mixin font-face($short-name,$name){
     $formats:(woff,eot,otf,ttf);
